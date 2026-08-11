@@ -624,6 +624,17 @@ nav ul li a:hover{
 
 }
 
+.price{
+
+    padding:0 18px 18px;
+    text-align:center;
+    color:var(--vert);
+    font-size:18px;
+    font-weight:700;
+    margin-top:10px;
+
+}
+
 @keyframes zoomCard{
 
     from{
