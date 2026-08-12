@@ -192,21 +192,44 @@ header{
 nav ul{
 
     display:flex;
-    gap:35px;
+    align-items:center;
+    gap:14px;
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+nav ul li{
+
+    display:flex;
 
 }
 
 nav ul li a{
 
-    color:#333;
-    font: weight 1000px;
-    transition:.3s;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:12px 20px;
+    border-radius:999px;
+    background:linear-gradient(135deg,#eefaf1,#f8fff6);
+    border:1.5px solid rgba(46,139,87,.25);
+    color:var(--noir);
+    font-weight:700;
+    letter-spacing:.2px;
+    transition:all .3s ease;
+    box-shadow:0 6px 18px rgba(46,139,87,.08);
 
 }
 
-nav ul li a:hover{
+nav ul li a:hover,
+nav ul li a:focus-visible{
 
-    color:var(--vert);
+    background:var(--vert);
+    color:#fff;
+    border-color:var(--vert);
+    transform:translateY(-2px);
+    box-shadow:0 12px 24px rgba(46,139,87,.20);
 
 }
 
